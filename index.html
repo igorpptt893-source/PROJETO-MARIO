@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site do Mario</title>
+</head>
+
+<body>
+    <div class="logo-header">
+        <img src="img/logo-header.png" alt="logo-header">
+        <a>Home</a>
+        <a onclick="mostraform()">Fale Conosco</a>
+        <a href="servicos.html">Nosso Serviços</a>
+    </div>
+    <div class="container">
+
+        <div class="mario1">
+            <img src="img/logo.png" alt="logo-site-mario" class="logo-mario">
+            <p> 🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧</p>
+
+            <p> Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o day!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="mostraform()">Entre em contato</button>
+        </div>
+
+        <div class="mario2">
+            <img src="./img/mario.png" alt="Mario-png" class="mario-png">
+        </div>
+
+    </div>
+
+    <div class="video">
+        <video src="img/video.mp4" autoplay loop muted> </video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="whatsapp-container">
+        <a href="https://wa.me/5591991336230?text=Quero%20um%20servi%C3%A7o%20web" class="whatsapp">
+            <img src="./img/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <form class="formulario" action="https://formcarry.com/s/B5Z-qWqQ7t9" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="name" />
+        <input placeholder="Seu e-mail" type="email" name="email" />
+        <textarea placeholder="Digite seu comentário aqui..." name="message"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

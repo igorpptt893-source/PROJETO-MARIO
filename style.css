@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+.logo-mario {
+    width: 350px;
+}
+
+.mario-png {
+    height: 500px;
+}
+
+button {
+    background-color: #d30d0d;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+video {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.mascara-video {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.logo-header img {
+    width: 70px;
+}
+
+.logo-header a {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-header a:hover {
+    color: #d30d0d;
+    transition: 0.5s ease-in-out;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 15px;
+    right: 12px;
+    z-index: 9999;
+}
+
+.whatsapp img {
+    width: 60px;
+}
+
+.whatsapp-container a {
+    cursor: pointer;
+}
+
+form {
+    background-color: #fff;
+    position: fixed;
+    top: 40%;
+    left: -340px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+
+    border-radius: 3px;
+    width: 350px;
+    z-index: 1;
+    transition: 0.5s left ease-in-out;
+}
+
+form input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+.mascara-formulario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: 0.5s visibility ease-in-out;
+}
+
+/* Media query 
+MAX- do tamanho de tela definido para tamanhos menores
+MIN- do tamanho definido para maiores
+*/
+@media (max-width: 1100px) {
+
+    .container {
+        flex-direction: column;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-mario {
+        display: none;
+        width: 90%
+    }
+
+
+    .mario-png {
+        height: auto;
+        width: 80%;
+    }
+
+    .logo-header {
+        padding: 10px;
+    }
+
+    .logo-header img {
+        width: 40px;
+    }
+
+    .logo-header a {
+        font-size: 16px;
+    }
+}
